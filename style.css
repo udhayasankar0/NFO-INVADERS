@@ -143,6 +143,79 @@ h2 {
     overflow: hidden;
 }
 
+/* scan */
+/* scan */
+.scan {
+  padding: 50px;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.scan-content {
+  max-width: 600px;
+}
+
+.scan-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  text-align: left;
+  color: #333;
+}
+
+.scan-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #555;
+}
+
+.scan-content p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  text-align: left;
+  color: #555;
+}
+
+.scan-bar {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.scan-input {
+  width: 300px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.scan-input:focus {
+  border-color: #007BFF;
+}
+
+.scan-button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.scan-button:hover {
+  background-color: #0056b3;
+}
+
+
+
   /* Features Section */
   .features {
     padding: 50px;
