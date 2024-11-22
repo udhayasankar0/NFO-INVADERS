@@ -83,7 +83,7 @@
     </div>
   </section>
   
-  
+  <!-- Pricing Section -->
   <section id="pricing" class="pricing">
     <div class="pricing-card">
         <div class="pricing-card-inner">
@@ -144,21 +144,60 @@
             </div>
         </div>
     </div>
-</section>
-
+  </section>
   
+  <!-- Blog Section -->
+  <section id="blog" class="blog">
+      <div class="blog-container">
+        <div class="blog-card">
+          <h3>5 Benefits of Smart Cameras in Cybersecurity</h3>
+          <p>Today, cybersecurity is crucial for protecting personal and business information. Smart cameras have become valuable tools for enhancing security, combining advanced features and ease of use.</p>
+          <button class="read-more-btn">Read More</button>
+          <img src="rick-and-morty.jpg" alt="Smart Cameras" class="blog-image">
+        </div>
   
+        <div class="blog-card">
+          <h3>5 Benefits of Smart Cameras in Cybersecurity</h3>
+          <p>Today, cybersecurity is crucial for protecting personal and business information. Smart cameras have become valuable tools for enhancing security, combining advanced features and ease of use.</p>
+          <button class="read-more-btn">Read More</button>
+          <img src="path/to/your/image.jpg" alt="Smart Cameras" class="blog-image">
+        </div>
   
+        <div class="blog-card">
+          <h3>5 Benefits of Smart Cameras in Cybersecurity</h3>
+          <p>Today, cybersecurity is crucial for protecting personal and business information. Smart cameras have become valuable tools for enhancing security, combining advanced features and ease of use.</p>
+          <button class="read-more-btn">Read More</button>
+          <img src="rick-and-morty.jpg" alt="Smart Cameras" class="blog-image">
+        </div>
   
-  
+        <div class="blog-card">
+          <h3>5 Benefits of Smart Cameras in Cybersecurity</h3>
+          <p>Today, cybersecurity is crucial for protecting personal and business information. Smart cameras have become valuable tools for enhancing security, combining advanced features and ease of use.</p>
+          <button class="read-more-btn">Read More</button>
+          <img src="path/to/your/image.jpg" alt="Smart Cameras" class="blog-image">
+        </div>
+      </div>
+  </section>
 
   <!-- About Section -->
-  <section id="about" class="about">
-    <p>About our company...</p>
-    <p>McAfee is a worldwide leader in online protection. We’re focused on protecting people, not devices. Our solutions adapt to our customers’ needs and empower them to confidently experience life online through integrated, easy-to-use solutions.
-
-      Need assistance? We’re here to help.</p>
-  </section>
+  <section class="about">
+    <div class="container">
+        <h1>About Our Project</h1>
+        <p>
+            Our project focuses on developing an advanced mitigation bot designed for real-time 
+            vulnerability management in organizations operating in critical sectors. The bot 
+            intelligently monitors IT/OT systems, scrapes OEM websites for emerging vulnerabilities, 
+            and leverages AI/ML models to predict, prioritize, and mitigate potential threats based 
+            on their severity and impact.
+        </p>
+        <ul>
+            <li>Automates alerts and mitigation strategies to enhance cybersecurity and reduce risks.</li>
+            <li>Sends detailed mitigation steps to relevant stakeholders in real-time.</li>
+            <li>Adapts to changes in website structures for accurate predictions and effective management.</li>
+            <li>Integrates seamlessly with existing security workflows for greater operational efficiency.</li>
+        </ul>
+    </div>
+</section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
@@ -177,43 +216,43 @@
   <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
   <script>
 
-gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger);
 
-// Zoom-in effect until the text fills the screen
-gsap.to("#zoom-in h2", {
-  scale: 50, // Scale up to fill the viewport
-  duration: 2,
-  ease: "power2.out",
-  scrollTrigger: {
-    trigger: "#zoom-in",
-    start: "top top", // Start animation when the top of #zoom-in hits the top of the viewport
-    end: "bottom top", // End animation when #zoom-in is fully scrolled out
-    scrub: true, // Smooth scroll-based control
-    pin: true, // Pin the section during the zoom effect
-  },
-});
+  // Zoom-in effect until the text fills the screen
+  gsap.to("#zoom-in h2", {
+    scale: 50, // Scale up to fill the viewport
+    duration: 2,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: "#zoom-in",
+      start: "top top", // Start animation when the top of #zoom-in hits the top of the viewport
+      end: "bottom top", // End animation when #zoom-in is fully scrolled out
+      scrub: true, // Smooth scroll-based control
+      pin: true, // Pin the section during the zoom effect
+    },
+  });
 
-// Reveal the next section smoothly
-gsap.to(".scan-content", {
-  opacity: 1, // Fade-in effect
-  scrollTrigger: {
-    trigger: "#scan",
-    start: "top center", // Start animation when the top of #scan reaches the center of the viewport
-    toggleActions: "play none none reverse", // Play animation when entering; reverse when scrolling back
-  },
-});
+  // Reveal the next section smoothly
+  gsap.to(".scan-content", {
+    opacity: 1, // Fade-in effect
+    scrollTrigger: {
+      trigger: "#scan",
+      start: "top center", // Start animation when the top of #scan reaches the center of the viewport
+      toggleActions: "play none none reverse", // Play animation when entering; reverse when scrolling back
+    },
+  });
 
     const blogContainer = document.querySelector('.blog-container');
 
     const { innerHeight } = window;
 
-blogContainer.addEventListener('mouseenter', () => {
-  blogContainer.style.animationPlayState = 'paused'; // Pause scrolling
-});
+    blogContainer.addEventListener('mouseenter', () => {
+      blogContainer.style.animationPlayState = 'paused'; // Pause scrolling
+    });
 
-blogContainer.addEventListener('mouseleave', () => {
-  blogContainer.style.animationPlayState = 'running'; // Resume scrolling
-});
+    blogContainer.addEventListener('mouseleave', () => {
+      blogContainer.style.animationPlayState = 'running'; // Resume scrolling
+    });
 
 
   </script>

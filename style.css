@@ -95,18 +95,6 @@ h2 {
   transform-origin: center center;
 }
 
-.scan {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.scan-content {
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.2s ease-in-out; /* Smooth fade-in */
-}
-
 
 /* scan */
 .scan {
@@ -470,12 +458,50 @@ min-height: 90vh; /* Ensure it occupies full screen height */
 
 
 /* About Section */
-.about {
-  padding: 50px 20px;
-  background-color: #000000;
-  color: white;
-  text-align: center;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
+
+.about {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.about h1, .about h2 {
+  color: #004d99;
+  margin-bottom: 15px;
+}
+
+.about p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.about ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.about ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .about {
+      padding: 20px;
+  }
+  .about h1, .about h2 {
+      font-size: 1.5rem;
+  }
+}
+
 
 /* Contact Section */
 .contact {
