@@ -76,7 +76,7 @@ to {
 }
 
 .header{
-  background-color: #069494;
+  background-color: black;
 }
 
 #zoom-in {
@@ -366,21 +366,21 @@ min-height: 90vh; /* Ensure it occupies full screen height */
   .pricing-card .plan-features li {
     margin-bottom: 10px;
   }
-  .pricing-card .pricing-btn {
-    background-color: #ccda11;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  .pricing-card .pricing-btn:hover {
-    background-color: #f4e500; /* Button hover color */
-  }
-
-
+/* Add this for the back button */
+.pricing-card .back-btn {
+  margin-top: 20px;
+  background-color: #ff5722; /* Distinct color for back button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.pricing-card .back-btn:hover {
+  background-color: #e64a19; /* Hover color */
+}
 
 
 
