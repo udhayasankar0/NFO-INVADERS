@@ -24,9 +24,11 @@
 
 
   <section class="header">
-  <section id="zoom-in">
-  <h2>INFO INVADERS</h2>
-</section>
+    <section id="zoom-in">
+      <h2>INFO INVADERS</h2>
+    </section>
+  </section>
+  
 
 <!-- Scan Section -->
 <section id="scan" class="scan">
@@ -84,67 +86,87 @@
   </section>
   
   <!-- Pricing Section -->
-  <section id="pricing" class="pricing">
-    <div class="pricing-card">
-        <div class="pricing-card-inner">
-            <div class="pricing-card-front">
-                <h3>Individual Plan</h3>
-                <p class="price">$5 <span>per month</span></p>
-                <p>Basic plan for individuals.</p>
-                <button class="pricing-btn">Choose Plan</button>
-            </div>
-            <div class="pricing-card-back">
-                <h3>Features</h3>
-                <ul class="plan-features">
-                    <li>Feature 1: ✔</li>
-                    <li>Feature 2: ✔</li>
-                    <li>Feature 3: ❌</li>
-                    <li>Feature 4: ❌</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+  <!-- Pricing Section -->
+<section id="pricing" class="pricing">
+  <div class="pricing-card">
+      <div class="pricing-card-inner">
+          <div class="pricing-card-front">
+              <h3>Individual Plan</h3>
+              <p class="price">$5 <span>per month</span></p>
+              <p>Basic plan for individuals.</p>
+              <button class="pricing-btn">Choose Plan</button>
+          </div>
+          <div class="pricing-card-back">
+              <h3>Features</h3>
+              <ul class="plan-features">
+                  <li>Feature 1: ✔</li>
+                  <li>Feature 2: ✔</li>
+                  <li>Feature 3: ❌</li>
+                  <li>Feature 4: ❌</li>
+              </ul>
+              <button 
+                  class="pricing-btn back-btn"
+                  onclick="window.location.href='individual-plan.html'">
+                  Choose Plan
+              </button>
+          </div>
+      </div>
+  </div>
 
-    <div class="pricing-card">
-        <div class="pricing-card-inner">
-            <div class="pricing-card-front">
-                <h3>Business Plan</h3>
-                <p class="price">$15 <span>per month</span></p>
-                <p>For small to medium-sized businesses.</p>
-                <button class="pricing-btn">Choose Plan</button>
-            </div>
-            <div class="pricing-card-back">
-                <h3>Features</h3>
-                <ul class="plan-features">
-                    <li>Feature 1: ✔</li>
-                    <li>Feature 2: ✔</li>
-                    <li>Feature 3: ✔</li>
-                    <li>Feature 4: ❌</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+  <!-- Repeat for other plans -->
+  <div class="pricing-card">
+      <div class="pricing-card-inner">
+          <div class="pricing-card-front">
+              <h3>Business Plan</h3>
+              <p class="price">$15 <span>per month</span></p>
+              <p>For small to medium-sized businesses.</p>
+              <bu
 
-    <div class="pricing-card">
-        <div class="pricing-card-inner">
-            <div class="pricing-card-front">
-                <h3>Enterprise Plan</h3>
-                <p class="price">$30 <span>per month</span></p>
-                <p>For large enterprises with full features.</p>
-                <button class="pricing-btn">Choose Plan</button>
-            </div>
-            <div class="pricing-card-back">
-                <h3>Features</h3>
-                <ul class="plan-features">
-                    <li>Feature 1: ✔</li>
-                    <li>Feature 2: ✔</li>
-                    <li>Feature 3: ✔</li>
-                    <li>Feature 4: ✔</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-  </section>
+tton class="pricing-btn">Choose Plan</button>
+          </div>
+          <div class="pricing-card-back">
+              <h3>Features</h3>
+              <ul class="plan-features">
+                  <li>Feature 1: ✔</li>
+                  <li>Feature 2: ✔</li>
+                  <li>Feature 3: ✔</li>
+                  <li>Feature 4: ❌</li>
+              </ul>
+              <button 
+                  class="pricing-btn back-btn"
+                  onclick="window.location.href='business-plan.html'">
+                  Choose Plan
+              </button>
+          </div>
+      </div>
+  </div>
+
+  <div class="pricing-card">
+      <div class="pricing-card-inner">
+          <div class="pricing-card-front">
+              <h3>Enterprise Plan</h3>
+              <p class="price">$30 <span>per month</span></p>
+              <p>For large enterprises with full features.</p>
+              <button class="pricing-btn">Choose Plan</button>
+          </div>
+          <div class="pricing-card-back">
+              <h3>Features</h3>
+              <ul class="plan-features">
+                  <li>Feature 1: ✔</li>
+                  <li>Feature 2: ✔</li>
+                  <li>Feature 3: ✔</li>
+                  <li>Feature 4: ✔</li>
+              </ul>
+              <button 
+                  class="pricing-btn back-btn"
+                  onclick="window.location.href='enterprise-plan.html'">
+                  Choose Plan
+              </button>
+          </div>
+      </div>
+  </div>
+</section>
+
   
   <!-- Blog Section -->
   <section id="blog" class="blog">
@@ -210,17 +232,16 @@
   </section>
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
-  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
   <script>
-
   gsap.registerPlugin(ScrollTrigger);
 
-  // Zoom-in effect until the text fills the screen
+  // Zoom-in effect with glowing gold text
   gsap.to("#zoom-in h2", {
-    scale: 50, // Scale up to fill the viewport
+    scale: 4.5, // Scale up to fill the viewport
     duration: 2,
     ease: "power2.out",
     scrollTrigger: {
@@ -232,7 +253,7 @@
     },
   });
 
-  // Reveal the next section smoothly
+  // Smooth reveal for the next section
   gsap.to(".scan-content", {
     opacity: 1, // Fade-in effect
     scrollTrigger: {
